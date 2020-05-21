@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+<default>
+    <techsalute_news><!--section id from system.xml-->
+        <general><!--group id from system.xml-->
+            <enable>1</enable><!--field id from system.xml-->
+        </general>
+        <storefrontend><!--group id from system.xml-->
+            <news_links>Latest News</news_links><!--field id from system.xml-->
+            <set_limit>10</set_limit><!--field id from system.xml-->
+        </storefrontend> 
+    </techsalute_news>
+</default>
+</config>

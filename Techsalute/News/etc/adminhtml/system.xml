@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="techsalute" translate="label" sortOrder="10">
+            <label>Techsalute</label>
+        </tab>
+        <section id ="techsalute_news" translate="label" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+            <class>techsalute_separator</class>
+            <label>News</label>
+            <tab>techsalute</tab>
+            <resource>Techsalute_News::news_config</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+                <label>General Configuration</label>
+                <!--Second label -->
+                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <!--This source model is for module enable and disable dropdown -->
+                </field>
+            </group>
+            <group id="storefrontend" translate="label" sortOrder="20" showInDefault="1" showInStore="1" showInWebsite="1">
+                <label>Store Frontend</label>
+                <field id="news_links" translate="label" type="text" sortOrder="30" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>News link</label>
+                    <comment>this is news link</comment>
+                </field>
+                <field id="set_limit" translate="label" type="text" sortOrder="40" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Set Limit</label>
+                    <comment>Set the number of limit to showing latest news</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
